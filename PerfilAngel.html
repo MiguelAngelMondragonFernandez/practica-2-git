@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil de Ángel</title>
+</head>
+<body>
+<button id="open-dialog1">Abrir Perfil Angel</button>
+<dialog id="dialog1">
+    <h1>
+    Perfil
+    </h1>
+    <picture></picture>
+
+
+    <label>
+        <h2>Nombre:</h2>
+    <strong>
+        Miguel Angel Mondragon Fernandez
+    </strong>
+    </label>
+
+    <label>
+        <h2>Edad:</h2>
+        <strong>
+        20 años
+        </strong>
+    </label>
+
+    <p>
+        <h2>Descripción:</h2>
+        <strong>
+            Mis intereses se centran en la investigación de las cosas que me interesan,
+            ya sea un mito, una leyenda, un anime, una teoria, lore de alguna historia,o videojuego
+            y todo lo que me pueda interesar, me gusta aprender cosas nuevas y compartirlas con los demás.
+        </strong>
+    </p>
+    <button id="close-dialog1">Cerrar</button>
+</dialog>
+
+<script >
+document.getElementById('open-dialog1').addEventListener('click', function() {
+    const dialog = document.getElementById('dialog1');
+        dialog.show();
+});
+document.getElementById('close-dialog1').addEventListener('click', function() {
+    const dialog = document.getElementById('dialog1');
+    dialog.close();
+})
+
+</script>
+</body>
+</html>
